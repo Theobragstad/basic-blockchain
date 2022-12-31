@@ -8,7 +8,7 @@ It uses SHA-256 for hashing and nonce values for mining, along with a variety of
 
 ### How to run
 - Download or clone this repository and navigate to the folder in the terminal
-- Compile: in lieu of a make file, you can run the following from the home directory    
+- Compile: in lieu of a makefile, you can run the following from the home directory    
 
 g++ -std=c++20 components/Block.cpp components/Blockchain.cpp components/Transaction.cpp components/sha256.cpp app/main.cpp
 - Run: ./a.out
