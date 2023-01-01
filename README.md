@@ -14,3 +14,7 @@ g++ -std=c++20 components/Block.cpp components/Blockchain.cpp components/Transac
 - Run: ./a.out
 
 **Note** you may get a warning stating that a function in sha256.cpp is deprecated. This warning did not exist at the time this project was developed. This project is not for intended for official release or production so this does not pose any risk. The project still functions as written and as expected.
+
+
+https://user-images.githubusercontent.com/48075045/210168094-836266a1-fdab-4746-912f-6c5f75ced43a.mov
+
