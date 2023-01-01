@@ -4,7 +4,7 @@
 
 This project provides the infrastructure and interface for a basic blockchain-based cryptocurrency that implements the core features/concepts of a real blockchain that can be added to, mined, checked for validity, and more.  
 
-It uses SHA-256 for hashing and nonce values for mining, along with a variety of data structures that are useful in the application of a blockchain.
+It uses SHA-256 for hashing and nonce values for mining, along with a variety of data structures that are useful in the creation and maintenance of a blockchain.
 
 ### How to run
 - Download or clone this repository and navigate to the folder in the terminal
