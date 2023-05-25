@@ -1,4 +1,4 @@
-#### Basic-Blockchain
+#### basic-blockchain
 
 Interface for a simple blockchain-based cryptocurrency  
 
