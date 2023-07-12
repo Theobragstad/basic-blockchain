@@ -1,4 +1,6 @@
-#### <img src="logo.png" width="100px"/> basic blockchain
+<img src="logo.png" width="100px"/> 
+
+#### basic blockchain
 
 Interface for a simple blockchain-based cryptocurrency  
 
