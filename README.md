@@ -12,5 +12,3 @@ How to run:
 - Download or clone this repository and navigate to the folder in the terminal
 - Compile: you can run the following from the home directory: 'make build'   
 - Run: ./a.out
-
-Note: you may get a warning stating that a function in sha256.cpp is deprecated. This warning did not exist at the time this project was developed. This project is not for intended for official release or production so this does not pose any risk. The project still functions as written/expected.
