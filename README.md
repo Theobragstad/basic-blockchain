@@ -11,4 +11,4 @@ It uses SHA-256 for hashing and nonce values for mining, along with a variety of
 How to run:    
 - Download or clone this repository and navigate to the folder in the terminal
 - Compile: you can run the following from the home directory: 'make build'   
-- Run: ./a.out
+- Run: ./a.out 
