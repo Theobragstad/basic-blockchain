@@ -2,11 +2,12 @@
 
 #### basic blockchain
 
-Interface for a simple blockchain-based cryptocurrency - provides the infrastructure and interface for a basic blockchain-based cryptocurrency that implements the core features/concepts of a real blockchain that can be added to, mined, checked for validity, and more.    
+Interface for a simple blockchain-based cryptocurrency - provides the infrastructure and interface for a basic blockchain-based cryptocurrency that implements the core features/concepts of a real blockchain that can be added to, mined, checked for validity, and more.
 
 Uses SHA-256 for hashing and nonce values for mining, along with a variety of data structures that are useful in the creation and maintenance of a blockchain.  
 
-How to run:    
+How to run:
+
 - From the project directory, run:
 - make build
-- ./a.out 
+- ./bc

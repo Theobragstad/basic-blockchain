@@ -20,29 +20,29 @@ int main(int argc, char* argv[])
     bool quit = false;
     bool invalid = false;
 
-    cout << "Welcome to the blockchain!" << endl;
+    cout << "Welcome to basic blockchain!" << endl;
 
 
     do {
-        cout << endl << "---main menu---" << endl;
-        cout << "1. add transaction" << endl;
-        cout << "2. verify blockchain" << endl;
-        cout << "3. mine pending transactions" << endl;
-        cout << "4. display blockchain" << endl;
-        cout << "5. get balance of an address" << endl;
-        cout << "6. get size of blockchain" << endl;
-        cout << "7. quit" << endl;
+        cout << endl << "---Main Menu---" << endl;
+        cout << "1. Add transaction" << endl;
+        cout << "2. Verify blockchain" << endl;
+        cout << "3. Mine pending transactions" << endl;
+        cout << "4. Display blockchain" << endl;
+        cout << "5. Get balance of an address" << endl;
+        cout << "6. Get size of blockchain" << endl;
+        cout << "7. Quit" << endl;
 
         cin >> choice;
         handleFailedInput();
 
         switch(choice) {
             case 1: 
-                cout << "enter source address (must be string): " << endl;
+                cout << "Enter source address (must be string): " << endl;
                 cin >> input1;
-                cout << "enter destination address (must be string): " << endl;
+                cout << "Enter destination address (must be string): " << endl;
                 cin >> input2;
-                cout << "enter amount (must be integer): " << endl;
+                cout << "Enter amount (must be integer): " << endl;
                 cin >> input3;
 
                 invalid = false;
@@ -53,40 +53,40 @@ int main(int argc, char* argv[])
                     }
                 }
                 if(invalid) {
-                    cout << "invalid transaction amount!" << endl;
+                    cout << "Invalid transaction amount!" << endl;
                     break;
                 }
                 
-                cout << "adding transaction... ";
+                cout << "Adding transaction... ";
                 bc.addTransaction(input1, input2, stoi(input3));
                 break;
             case 2:
-                cout << "verifying validity of blockchain... ";
+                cout << "Verifying validity of blockchain... ";
                 if(bc.isChainValid()) {
-                    cout << "chain is valid." << endl;
+                    cout << "Chain is valid." << endl;
                 }
                 else {
-                    cout << "chain is invalid." << endl;
+                    cout << "Chain is invalid." << endl;
                 }
                 break;
             case 3:
-                cout << "enter miner address (must be string): " << endl;
+                cout << "Enter miner address (must be string): " << endl;
                 cin >> input1;
-                cout << "mining... ";
+                cout << "Mining... ";
 
                 if(bc.minePendingTransactions(input1)) {
-                    cout << "new block mined sucessfully." << endl;
+                    cout << "New block mined sucessfully." << endl;
                 }
                 else {
-                    cout << "nothing to mine." << endl;
+                    cout << "Nothing to mine." << endl;
                 }
                 break;
             case 4:
-                cout << "printing contents of current blockchain... " << endl << endl;;
+                cout << "Printing contents of current blockchain... " << endl << endl;;
                 bc.prettyPrint();
                 break;
             case 5: 
-                cout << "enter address (must be a string): ";
+                cout << "Enter address (must be a string): ";
                 cin >> input1;
                 cout << "The balance of address '" << input1 << "' is " << bc.getBalanceOfAddress(input1) << "." << endl;
                 break;
@@ -94,14 +94,14 @@ int main(int argc, char* argv[])
                 cout << "There are currently " << bc.getChainSize() << " blocks in the blockchain." << endl;
                 break;
             case 7: 
-                cout << "quitting... ";
+                cout << "Quitting... ";
                 quit = true;
                 break;
-            default: cout << "invalid choice!" << endl;
+            default: cout << "Invalid choice!" << endl;
         }
     } while(!quit);
 
-    cout << "thank you for using the blockchain!" << endl;
+    cout << "Thank you for using the blockchain!" << endl;
 
     return 0;
 }
