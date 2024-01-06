@@ -9,5 +9,5 @@ Uses SHA-256 for hashing and nonce values for mining, along with a variety of da
 How to run:
 
 - From the project directory, run:
-- make build
-- ./bc
+- `make build`
+- `./bc`
